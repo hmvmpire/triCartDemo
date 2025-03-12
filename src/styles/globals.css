@@ -1,0 +1,416 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+@font-face {
+  font-family: "PoppinsLight300";
+  src: local("PoppinsLight300"), url(./fonts/PoppinsLight300.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsRegular400";
+  src: local("PoppinsRegular400"),
+    url(./fonts/PoppinsRegular400.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold600";
+  src: local("PoppinsSemiBold600"),
+    url(./fonts/PoppinsSemiBold600.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsBold700";
+  src: local("PoppinsBold700"), url(./fonts/PoppinsBold700.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsExtraBold800";
+  src: local("PoppinsExtraBold800"),
+    url(./fonts/PoppinsExtraBold800.ttf) format("truetype");
+}
+
+body {
+  font-family: "PoppinsLight300";
+  color: #424242;
+}
+
+.fw_400 {
+  font-family: "PoppinsRegular400";
+}
+
+.fw_600 {
+  font-family: "PoppinsSemiBold600";
+}
+
+.fw_700 {
+  font-family: "PoppinsBold700";
+}
+
+/* Input Placeholder color change */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: rgb(131, 131, 131);
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: rgb(131, 131, 131);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: rgb(131, 131, 131);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: rgb(131, 131, 131);
+}
+
+/* overall Scrollbar css */
+
+.scroller1::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  position: relative;
+  direction: rtl;
+  z-index: 0 !important;
+}
+
+.scroller1::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: rgb(232, 232, 232);
+}
+
+.scroller1::-webkit-scrollbar-thumb {
+  background: black;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.scroller1::-webkit-scrollbar-thumb:hover {
+  background: black;
+  box-shadow: none;
+}
+
+.sm_one_lines_elipsis {
+  display: -webkit-box;
+  width: 100%;
+  height: 16px;
+  margin: 0 auto;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.one_lines_elipsis {
+  display: -webkit-box;
+  width: 100%;
+  height: 24px;
+  margin: 0 auto;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.two_lines_elipsis {
+  display: -webkit-box;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.three_lines_elipsis {
+  display: -webkit-box;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.big_three_lines_elipsis {
+  display: -webkit-box;
+  width: 100%;
+  height: 66px;
+  margin: 0 auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.num_input::-webkit-outer-spin-button,
+.num_input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.num_input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+
+  /* Your Tailwind CSS classes here */
+}
+
+.animatedCard {
+  position: absolute;
+  bottom: -100%;
+}
+
+.animatedContainer:hover .animatedCard {
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .animatedCard {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+.simpleScroll::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+  position: relative;
+  direction: rtl;
+  z-index: 0 !important;
+}
+
+.simpleScroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: white;
+}
+
+.simpleScroll::-webkit-scrollbar-thumb {
+  background: rgb(150, 150, 150);
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.simpleScroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(150, 150, 150);
+  box-shadow: none;
+}
+
+.container1 {
+  width: 1440px;
+  max-width: 1440px;
+  min-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 {
+  width: 1480px;
+  max-width: 1480px;
+  min-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container3 {
+  width: 1200px;
+  max-width: 1200px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1240px) {
+  .container3 {
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 1000px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container3 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .container3 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .container1 {
+    width: 1100px;
+    max-width: 1100px;
+    min-width: 1100px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .container2 {
+    width: 1140px;
+    max-width: 1140px;
+    min-width: 1140px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .container1 {
+    width: 950px;
+    max-width: 950px;
+    min-width: 950px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .container2 {
+    width: 990px;
+    max-width: 990px;
+    min-width: 990px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container1 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container2 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.secondaryBg {
+  background-color: #f1f2fe !important;
+}
+
+.bluish_bg {
+  background-color: #e0dcf6;
+}
+
+.text-xxs {
+  font-size: 0.625rem;
+}
+
+.detailModal {
+  height: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .detailModal {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .detailModal {
+    height: 90vh;
+  }
+}
+
+.xxsPaddingTop {
+  padding-top: 2px;
+}
+
+.purpleBg {
+  background-color: #944cf5;
+}
+
+.bluish_bg2 {
+  background-color: #f1f2fe;
+}
+
+.departmentDropdown {
+  display: none;
+}
+
+.departmentBtn:hover .departmentDropdown {
+  display: block;
+}
+
+.depDropdown {
+  display: none;
+}
+
+.depBtn:hover .depDropdown {
+  display: block;
+}
+
+.h1_line_height {
+  line-height: 60px !important;
+}
+
+.h2_line_height {
+  line-height: 50px !important;
+}
+
+.bl_round {
+  border-bottom-left-radius: 50%;
+}
+
+.footer2Bg {
+  background-color: #222529;
+}
+
+.footer3Bg {
+  background-color: #f0ebe2;
+}
+
+.footer4Bg {
+  background-color: #222529;
+}
+
+input[type='radio'] {
+  accent-color: #232323;
+}
+
+.electronics_checkbox:checked {
+  accent-color: #ff7300 !important;
+  color: white !important;
+}
