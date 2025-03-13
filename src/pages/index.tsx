@@ -9,10 +9,8 @@ import { PagesCounting } from "@/components/subComponents/commonHomePage/pagesCo
 const Index = () => {
   return (
     <Fragment>
-      {/* Hero Section */}
       <CommonNavbar />
       <div className="relative px-3 h-[800px] sm:h-[800px] bg-gradient-to-r from-indigo-700 via-purple-700 to-purple-700 flex flex-col items-center justify-center">
-        {/* <div></div> */}
         <div className="text-center text-black">
           <h1 className="text-3xl sm:text-4xl md:text-5xl fw_700 text-white mb-14">BUILT SITES WITH <br />THE SPIRIT OF EXCELLENCE</h1>
           <p className="text-base sm:text-lg md:text-xl mb-14 text-white">"Discover the best products for your needs, crafted with precision and passion.<br className="hidden lg:block" />
