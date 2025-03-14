@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "../../static/whiteLogo.png";
-import logo2 from "../../static/blackLogo.png";
+import logo from "../../static/commonLogo2.png";
+import logo2 from "../../static/commonLogo1.png";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -41,7 +41,7 @@ export const CommonNavbar: FC<CommonNavbarProps> = ({
                     <Image
                         src={(scroll || otherRoute) ? logo2 : logo}
                         alt="logo"
-                        className="w-20 sm:w-24 md:w-28 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                        className="w-24 sm:w-28 md:w-32 cursor-pointer hover:opacity-80 transition-opacity duration-300"
                         onClick={() => router.push("/")}
                     />
                     {!isSidebarOpen && <button

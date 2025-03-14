@@ -6,7 +6,7 @@ import { useMediaQuery } from "@mui/material";
 import { ElectronicsNavLinks } from "./subComponents/electronicsNavLinks";
 import { ElectronicsSideNav } from "./subComponents/electronicsSideNav";
 import { useState } from "react";
-import logo from "../../static/blueLogo.png"
+import logo from "../../static/electronicsLogo.png"
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -37,7 +37,7 @@ export const ElectronicsNavbar = () => {
               <FontAwesomeIcon icon={faBars} className="text-lg text-ELECTRONICS_PRIMARY-HOVER" />
             </button>
           )}
-          <Image src={logo} alt="logo" className="w-40 cursor-pointer" onClick={() => router.push("/tricart-electronics")} />
+          <Image src={logo} alt="logo" className="w32 sm:w-44 cursor-pointer" onClick={() => router.push("/tricart-electronics")} />
         </div>
         <div
           className={`flex items-center ${matches3 ? "justify-end w-max" : "gap-x-10 w-full"
@@ -72,10 +72,10 @@ export const ElectronicsNavbar = () => {
               {!matches3 && "My Account"}
             </Link>
             <Link href={"/tricart-electronics/cart"}
-              className={`${matches3 ? "h-10 w-10 min-w-10" : "h-14 w-14 min-w-14"
+              className={`${matches3 ? "h-10 w-10 min-w-10" : "h-12 w-12 min-w-12"
                 } rounded-md flex items-center justify-center bg-ELECTRONICS_PRIMARY hover:bg-ELECTRONICS_PRIMARY-HOVER text-white border-none outline-none shadow-none`}
             >
-              <FontAwesomeIcon icon={faBagShopping} className="text-lg md:text-2xl" />
+              <FontAwesomeIcon icon={faBagShopping} className="text-lg md:text-xl" />
             </Link>
           </div>
         </div>

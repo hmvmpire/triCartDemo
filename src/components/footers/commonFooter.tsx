@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import logo from "../../static/blackLogo.png";
+import logo from "../../static/commonFooterLogo.png";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -25,7 +25,7 @@ const CommonFooter: FC<CommonFooterProps> = ({
                         <Image
                             src={logo}
                             alt="logo"
-                            className="w-28 cursor-pointer hover:opacity-80 transition-opacity duration-300"
+                            className="w-32 cursor-pointer hover:opacity-80 transition-opacity duration-300"
                             onClick={() => router.push("/")}
                         />
                         <p className="text-gray-400">

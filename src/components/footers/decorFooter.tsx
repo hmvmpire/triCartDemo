@@ -1,5 +1,5 @@
 import Image from "next/image"
-import blackLogo from '../../static/blackLogo.png'
+import blackLogo from '../../static/decorFooterLogo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF"
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons/faXTwitter"

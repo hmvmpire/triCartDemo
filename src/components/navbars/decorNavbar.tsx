@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
-import logo from "../../static/blackLogo.png";
+import logo from "../../static/decorLogo.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { ShippingMethods3 } from "./subComponents/shippingMethods";
