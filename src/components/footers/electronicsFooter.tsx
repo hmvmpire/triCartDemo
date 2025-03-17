@@ -1,5 +1,3 @@
-import Image from "next/image"
-import blackLogo from '../../static/electronicsLogo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF"
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons/faXTwitter"
@@ -8,15 +6,17 @@ import { toast } from "react-toastify"
 import { useState } from "react"
 import Link from "next/link"
 import { handleSmoothScroll } from "@/services/generalService"
+import { useRouter } from "next/router"
 
 export const ElectronicsFooter = () => {
     const [email, setEmail] = useState<any>("")
+    const router = useRouter()
     return (
         <div className="bg-white">
             <div className="container1 pb-10 pt-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-5 lg:gap-0 sm:gap-x-5">
                     <div className="">
-                        <Image src={blackLogo} alt="blackLogo" className="cursor-pointer w-32" />
+                        <button onClick={() => router.push("/tricart-electronics")} className={`text-2xl fw_600 text-ELECTRONICS_PRIMARY-HOVER`}>LOGO</button>
                         <div className="mt-8">
                             <p className="text-sm text-zinc-500 fw_400">Address: 1234 Street, Suite 500, New York, NY</p>
                             <button className="underline text-black text-sm fw_400">

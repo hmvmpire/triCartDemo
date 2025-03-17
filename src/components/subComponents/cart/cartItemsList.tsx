@@ -5,7 +5,6 @@ import { CartItem } from "./cartItem";
 import Link from "next/link";
 
 const CartItemsList = () => {
-    // const [list, setList] = useState<productType1[]>([])
     const cart = useCart();
     const updateCart = useUpdateCart()
     const getCartItems = useGetCartItems()

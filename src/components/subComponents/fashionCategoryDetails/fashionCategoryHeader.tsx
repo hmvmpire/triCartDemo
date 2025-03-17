@@ -1,4 +1,4 @@
-import h4BannerBg from "../../../static/home4Banner.jpeg";
+import h4BannerBg from "../../../static/cardDummyimg1.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong, faHome } from "@fortawesome/free-solid-svg-icons";
 import { FC } from "react";

@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import cardBg1 from '../../../static/cardBg1.jpg'
 import { CarouselList } from '../../productsLists/carouselList'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons/faShoppingBag'
 import { useMediaQuery } from '@mui/material'

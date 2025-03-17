@@ -12,8 +12,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
-import logo from "../../static/decorLogo.png";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { ShippingMethods3 } from "./subComponents/shippingMethods";
 import { DecorNavLinks } from "./subComponents/decorNavLinks";
@@ -119,14 +117,7 @@ export const DecorNavbar: React.FC = () => {
                 <div className="hidden lg:block w-full">
                     {isLargeDesktop ? renderSearchBox() : <ShippingMethods3 />}
                 </div>
-                <div className="w-32 min-w-32">
-                    <Image
-                        src={logo}
-                        alt="logo"
-                        className="w-40 cursor-pointer"
-                        onClick={handleLogoClick}
-                    />
-                </div>
+                <button onClick={handleLogoClick} className={`text-2xl fw_600 text-DECOR_PRIMARY-HOVER`}>LOGO</button>
                 <div className={`${isLargeDesktop ? "block lg:hidden" : "block"} w-full col-span-3`}>
                     <NavbarSearchbox
                         bgColor="bg-zinc-100"

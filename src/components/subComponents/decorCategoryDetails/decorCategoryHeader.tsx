@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/shared/breadcrumb";
-import headerBg1 from "../../../static/category3HeaderBg.jpg";
+import headerBg1 from "../../../static/cardDummyimg1.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FC } from "react";

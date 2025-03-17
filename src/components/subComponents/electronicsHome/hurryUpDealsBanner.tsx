@@ -1,8 +1,8 @@
 import { CompHeading2 } from "@/components/shared/CompHeading2"
-import dealBg1 from "../../../static/appliances.jpg";
+import dealBg1 from "../../../static/cardDummyimg1.jpeg";
 import Image from "next/image";
-import fridge3 from "../../../static/fridge3.png";
-import deal2 from "../../../static/oven1.jpg";
+import fridge3 from "../../../static/cardDummyimg1.jpeg";
+import deal2 from "../../../static/cardDummyimg1.jpeg";
 import { useMediaQuery } from "@mui/material";
 import { FC } from "react";
 import { handleSmoothScroll } from "@/services/generalService";

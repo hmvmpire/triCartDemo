@@ -61,7 +61,7 @@ export const Categories = () => {
                     {homeDecorMainCategories.map((category, index) => (
                         <div className="mx-2 my-2 h-full rounded-sm" key={index + 1}>
                             <Link href={`/tricart-home-decore/category/${stringToSlug(category.title)}`} className="p-3 bg-DECOR_PRIMARY-LIGHT h-full border-none outline-none shadow-none flex flex-col overflow-hidden group cursor-pointer">
-                                <Image src={category.img} alt="category img" className="w-full h-full object-contain group-hover:scale-110 duration-1000" />
+                                <Image src={category.img} alt="category img" className="w-full h-full object-cover group-hover:scale-110 duration-1000" />
                                 <button className=" f_400 text-DECOR_PRIMARY-HOVER rounded-full h-8 sm:h-10 text-center uppercase text-xs sm:text-sm fw_600">{category.title}</button>
                             </Link>
                         </div>

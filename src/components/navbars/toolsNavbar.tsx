@@ -3,8 +3,6 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBagShopping, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
-import logo from "../../static/toolsLogo.png"
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { Nav2SearchBox } from "../searchBoxes/nav2SearchBox";
 import { ToolsNavLinks } from "./subComponents/toolsNavLinks";
@@ -35,7 +33,7 @@ export const ToolsNavbar = () => {
                             <FontAwesomeIcon icon={faBars} className="text-xl" />
                         </button>
                     )}
-                    <Image src={logo} alt="logo" className={`${matches3 ? "w-32" : "w-44"} cursor-pointer`} onClick={() => router.push("/tricart-tools")} />
+                    <button onClick={() => router.push("/tricart-tools")} className={`text-2xl fw_600 text-TOOLS_PRIMARY-HOVER`}>LOGO</button>
                 </div>
                 <div
                     className={`flex items-center ${matches3 ? "justify-end w-max" : (matches2 ? "gap-x-14 w-full" : "gap-x-20 w-full")

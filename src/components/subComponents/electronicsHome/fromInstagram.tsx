@@ -1,10 +1,10 @@
 import Image from "next/image"
 import { CompHeading2 } from "../../shared/CompHeading2"
-import blog1 from '../../../static/blog1.jpg'
-import blog2 from '../../../static/blog2.jpg'
-import blog3 from '../../../static/blog3.jpg'
-import blog4 from '../../../static/blog4.jpg'
-import blog5 from '../../../static/blog5.jpg'
+import blog1 from '../../../static/cardDummyimg1.jpeg'
+import blog2 from '../../../static/cardDummyimg1.jpeg'
+import blog3 from '../../../static/cardDummyimg1.jpeg'
+import blog4 from '../../../static/cardDummyimg1.jpeg'
+import blog5 from '../../../static/cardDummyimg1.jpeg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 

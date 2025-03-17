@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Breadcrumb } from "@/components/shared/breadcrumb";
-import aboutImg1 from '../../../static/aboutImg1.jpg';
-import aboutImg2 from '../../../static/aboutImg2.jpg';
-import teamImg from '../../../static/teamImg.jpg';
+import aboutImg1 from '../../../static/cardDummyimg1.jpeg';
+import aboutImg2 from '../../../static/cardDummyimg1.jpeg';
+import teamImg from '../../../static/cardDummyimg1.jpeg';
 import Image from "next/image";
 
 export const AboutUsMain = () => {
@@ -42,7 +42,7 @@ export const AboutUsMain = () => {
                                 Every theme we create is a result of meticulous attention to detail. We combine cutting-edge design trends with robust functionality to ensure our themes stand out in today's competitive digital landscape.
                             </p>
                         </div>
-                        <Image src={aboutImg1} alt="aboutImg1" className="object-cover h-full w-full xl:w-4/5 rounded-lg" />
+                        <Image src={aboutImg1} alt="aboutImg1" className="object-cover h-full w-full rounded-lg" />
                     </div>
                 </div>
 

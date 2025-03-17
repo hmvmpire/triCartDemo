@@ -9,7 +9,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { faChevronDown, faCoins } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import details3Desc from '../../../static/category3HeaderBg.jpg'
+import details3Desc from '../../../static/cardDummyimg1.jpeg'
 import Image from 'next/image';
 
 const Accordion = styled((props: AccordionProps) => (

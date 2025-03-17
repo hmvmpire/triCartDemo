@@ -1,5 +1,3 @@
-import Image from "next/image"
-import blackLogo from '../../static/decorFooterLogo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons/faFacebookF"
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons/faXTwitter"
@@ -8,14 +6,18 @@ import Link from "next/link"
 import { useState } from "react"
 import { toast } from "react-toastify"
 import { handleSmoothScroll } from "@/services/generalService"
+import { useRouter } from "next/router"
 
 export const DecorFooter = () => {
     const [email, setEmail] = useState<any>("")
+    const router = useRouter()
+    const handleLogoClick = () => router.push("/tricart-home-decore");
+
     return (
         <div className="py-10 px-3 sm:px-5 lg:px-10 bg-DECOR_PRIMARY-LIGHT border-t">
             <div className="grid grid-cols-12 gap-y-10 lg:gap-y-5 xl:gap-y-0 sm:gap-x-5 pt-14 pb-20 border-b border-zinc-300">
                 <div className="col-span-12 lg:col-span-4 xl:col-span-3">
-                    <Image src={blackLogo} alt="blackLogo" className="cursor-pointer w-32" />
+                    <button onClick={handleLogoClick} className={`text-2xl fw_600 text-DECOR_PRIMARY-HOVER`}>LOGO</button>
                     <div className="mt-8 flex flex-col gap-y-2">
                         <p className="text-base text-DECOR_PRIMARY fw_400">portotheme@portotheme.com</p>
                         <p className="text-base text-DECOR_PRIMARY fw_400">(800) 123-4567</p>

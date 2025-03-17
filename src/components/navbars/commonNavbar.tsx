@@ -1,6 +1,3 @@
-import Image from "next/image";
-import logo from "../../static/commonLogo2.png";
-import logo2 from "../../static/commonLogo1.png";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -38,12 +35,7 @@ export const CommonNavbar: FC<CommonNavbarProps> = ({
         <>
             <div className={`sticky z-30 top-0 h-20 left-0 ${otherRoute ? `bg-white shadow-sm` : scroll ? "text-black bg-white shadow-sm" : "shadow-md text-white bg-gradient-to-r from-indigo-700 via-purple-700 to-purple-700"}`}>
                 <div className={`${container ? "container1" : "container3"} h-20 flex items-center justify-between gap-x-4`}>
-                    <Image
-                        src={(scroll || otherRoute) ? logo2 : logo}
-                        alt="logo"
-                        className="w-24 sm:w-28 md:w-32 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-                        onClick={() => router.push("/")}
-                    />
+                    <button onClick={() => router.push("/")} className={`text-2xl fw_400 ${(scroll || otherRoute) ? "text-black" : "text-white"}`}>LOGO</button>
                     {!isSidebarOpen && <button
                         onClick={toggleSidebar}
                         className={`lg:hidden ${(scroll || otherRoute) ? "text-black" : "text-white"} hover:scale-95 transition-colors`}
@@ -86,12 +78,7 @@ export const CommonNavbar: FC<CommonNavbarProps> = ({
                     }`}
             >
                 <div className="flex items-center justify-between p-5 border-b border-gray-200">
-                    <Image
-                        src={logo2}
-                        alt="logo"
-                        className="w-20 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-                        onClick={() => router.push("/")}
-                    />
+                    <button onClick={() => router.push("/")} className={`text-2xl fw_400 text-black`}>LOGO</button>
                     <button
                         onClick={toggleSidebar}
                         className="text-black hover:scale-95 transition-colors"

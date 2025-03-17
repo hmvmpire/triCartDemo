@@ -5,6 +5,7 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { FC, useEffect, useState } from "react";
+import dummyImg from '../../../static/cardDummyimg1.jpeg'
 
 interface ProductItemProps {
     product: productType1;
@@ -35,7 +36,7 @@ export const ProductItem: FC<ProductItemProps> = ({
     return (
         <div className="flex gap-x-2 py-2">
             <div className="w-16 min-w-16 h-16 relative">
-                {product.images && <Image src={product.images[0]} alt="product img" className="w-16 h-16" />}
+                {product.images && <Image src={dummyImg} alt="product img" className="w-16 h-16" />}
             </div>
             <div className="flex flex-col gap-y-2 w-full">
                 <div className="flex items-start justify-between gap-x-2">

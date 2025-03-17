@@ -23,7 +23,7 @@ export const FashionHomeheader = () => {
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover"
                 >
-                    <source src="/header4BgVideo.mp4" type="video/mp4" />
+                    <source src="" type="video/mp4" />
                 </video>
 
                 {/* Overlay (optional) */}

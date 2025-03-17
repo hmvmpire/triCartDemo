@@ -1,6 +1,6 @@
 
-import headerImg1 from "../../static/header2Img1.png";
-import headerImg2 from "../../static/home2Img2.png";
+import headerImg1 from "../../static/cardDummyimg1.jpeg";
+import headerImg2 from "../../static/cardDummyimg1.jpeg";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -65,7 +65,7 @@ export const ToolsHomeHeader = () => {
                                     <Image
                                         src={item.img}
                                         alt="headerImg1"
-                                        className={`lg:-mb-8 h-min object-cover w-min`}
+                                        className={`lg:-mb-8 h-min object-cover w-full`}
                                     />
                                 </div>}
 
@@ -114,7 +114,7 @@ export const ToolsHomeHeader = () => {
                                     <Image
                                         src={item.img}
                                         alt="headerImg1"
-                                        className={`lg:-mb-8 h-min object-cover`}
+                                        className={`lg:-mb-8 h-full w-full object-cover`}
                                     />
                                 </div>}
                             </div>

@@ -6,8 +6,6 @@ import { useMediaQuery } from "@mui/material";
 import { ElectronicsNavLinks } from "./subComponents/electronicsNavLinks";
 import { ElectronicsSideNav } from "./subComponents/electronicsSideNav";
 import { useState } from "react";
-import logo from "../../static/electronicsLogo.png"
-import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { faFirstOrder } from "@fortawesome/free-brands-svg-icons";
@@ -37,7 +35,7 @@ export const ElectronicsNavbar = () => {
               <FontAwesomeIcon icon={faBars} className="text-lg text-ELECTRONICS_PRIMARY-HOVER" />
             </button>
           )}
-          <Image src={logo} alt="logo" className="w32 sm:w-44 cursor-pointer" onClick={() => router.push("/tricart-electronics")} />
+          <button onClick={() => router.push("/tricart-electronics")} className={`text-2xl fw_600 text-ELECTRONICS_PRIMARY-HOVER`}>LOGO</button>
         </div>
         <div
           className={`flex items-center ${matches3 ? "justify-end w-max" : "gap-x-10 w-full"

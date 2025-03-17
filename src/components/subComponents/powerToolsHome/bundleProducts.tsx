@@ -3,7 +3,7 @@ import { toolsProductsData } from "@/data/toolsData"
 import { productType2 } from "@/Types/productPropsTypes"
 import { useMediaQuery } from "@mui/material"
 import { useEffect, useState } from "react"
-import header2Bg from "../../../static/header2Bg.jpeg";
+import header2Bg from "../../../static/cardDummyimg1.jpeg";
 
 export const BundleProducts = () => {
     const matches = useMediaQuery("(max-width:1024px)");

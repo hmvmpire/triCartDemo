@@ -2,8 +2,6 @@ import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
-import logo from "../../static/commonFooterLogo.png";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -22,12 +20,7 @@ const CommonFooter: FC<CommonFooterProps> = ({
             <div className={container ? "container3" : "container1"}>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
-                        <Image
-                            src={logo}
-                            alt="logo"
-                            className="w-32 cursor-pointer hover:opacity-80 transition-opacity duration-300"
-                            onClick={() => router.push("/")}
-                        />
+                        <button onClick={() => router.push("/")} className={`text-2xl fw_400 text-black`}>LOGO</button>
                         <p className="text-gray-400">
                             Empowering your journey with innovative solutions.
                         </p>
@@ -61,7 +54,7 @@ const CommonFooter: FC<CommonFooterProps> = ({
 
                     {/* Column 2: Quick Links */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold">Quick Links</h3>
+                        <h3 className="text-lg fw_400">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link
@@ -100,7 +93,7 @@ const CommonFooter: FC<CommonFooterProps> = ({
 
                     {/* Column 3: Legal Links */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold">Legal</h3>
+                        <h3 className="text-lg fw_400">Legal</h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link
@@ -131,7 +124,7 @@ const CommonFooter: FC<CommonFooterProps> = ({
 
                     {/* Column 4: Newsletter */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-semibold">Newsletter</h3>
+                        <h3 className="text-lg fw_400">Newsletter</h3>
                         <p className="text-gray-400">
                             Subscribe to our newsletter for the latest updates.
                         </p>

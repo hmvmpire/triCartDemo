@@ -1,5 +1,5 @@
-import h4Blog1 from '../../../static/h4Blog1.jpg'
-import h4Blog2 from '../../../static/h4Blog2.jpg'
+import h4Blog1 from '../../../static/cardDummyimg1.jpeg'
+import h4Blog2 from '../../../static/cardDummyimg1.jpeg'
 import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons/faArrowRightLong"

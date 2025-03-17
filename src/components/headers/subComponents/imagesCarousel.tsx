@@ -127,8 +127,8 @@ export const ImagesCarousel: React.FC<ImageCarouselProps> = ({
     >
         {imagesData.map((img, index) => (
             <div className="pr-2 py-2 cursor-pointer" key={index + 1}>
-                <div className={`${bgColor ? bgColor : "bg-white"} rounded-md p-5 border-2 border-black ${myIndex === index ? "border-opacity-100" : "border-opacity-0"}`}>
-                    <Image src={img} alt="img" onClick={() => handleThumbnailClick(index)} className={`w-full h-24 object-contain`} />
+                <div className={`${bgColor ? bgColor : "bg-white"} rounded-md p-2 border-2 border-black ${myIndex === index ? "border-opacity-100" : "border-opacity-0"}`}>
+                    <Image src={img} alt="img" onClick={() => handleThumbnailClick(index)} className={`w-full h-24 object-cover`} />
                 </div>
             </div>
 

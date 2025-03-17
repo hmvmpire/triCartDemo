@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import h4BannerBg from '../../../static/home4Banner.jpeg'
+import h4BannerBg from '../../../static/cardDummyimg1.jpeg'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 import { handleSmoothScroll } from '@/services/generalService'
 

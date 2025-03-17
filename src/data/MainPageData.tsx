@@ -1,15 +1,8 @@
-import home1 from '../static/home1.png'
-import home2 from '../static/home2.png'
-import home3 from '../static/home3.png'
-import home4 from '../static/home4.png'
-import listing1 from '../static/listing1.png'
-import listing2 from '../static/listing2.png'
-import listing3 from '../static/listing3.png'
-import listing4 from '../static/listing4.png'
-import detail1 from '../static/detail1.png'
-import detail2 from '../static/detail2.png'
-import detail3 from '../static/detail3.png'
-import detail4 from '../static/detail4.png'
+import home1 from '../static/cardDummyimg1.jpeg'
+import home2 from '../static/cardDummyimg1.jpeg'
+import home3 from '../static/cardDummyimg1.jpeg'
+import home4 from '../static/cardDummyimg1.jpeg'
+
 import { faCashRegister, faChair, faEnvelope, faFileContract, faHome, faInfoCircle, faMobileAlt, faProjectDiagram, faShieldAlt, faShirt, faShoppingCart, faSlidersH, faTools, faUserCog, faUserLock } from '@fortawesome/free-solid-svg-icons'
 import {
   faReact,           // NextJS
@@ -27,22 +20,6 @@ export const homePages = [
 ]
 
 
-export const listingPages = [
-  { name: "Listing Page 1", image: listing1, slug: "/tricart-electronics/category/screen-protectors" },
-  { name: "Listing Page 2", image: listing2, slug: "/tricart-tools/category/home-decore" },
-  { name: "Listing Page 3", image: listing3, slug: "/tricart-home-decore/category/furniture" },
-  { name: "Listing Page 4", image: listing4, slug: "/tricart-fashion/category/tables-desks" },
-]
-
-export const detailPages = [
-  { name: "Detail Page 1", image: detail1, slug: "/tricart-electronics/product/anker-322-usb-c-to-usb-c-cable-1-8m-braided" },
-  { name: "Detail Page 2", image: detail2, slug: "/tricart-tools/product/cimota-upholstered-armchair" },
-  { name: "Detail Page 3", image: detail3, slug: "/tricart-home-decore/product/cimota-upholstered-armchair" },
-  { name: "Detail Page 4", image: detail4, slug: "/tricart-fashion/product/cimota-upholstered-armchair" },
-]
-
-
-
 export const otherPages = [
   { icon: faEnvelope, title: "Contact Us", slug: "/contact-us" },
   { icon: faInfoCircle, title: "About Us", slug: "/about-us" },
@@ -54,12 +31,6 @@ export const otherPages = [
   { icon: faUserCog, title: "Account Dashboard", slug: "/account/my-account" },
 ];
 
-export const pagesLength = [
-  { name: "Home Pages", length: "4" },
-  { name: "Listing Pages", length: "4" },
-  { name: "Detail Pages", length: "4" },
-  { name: "Other Pages", length: "8+" },
-]
 
 export const templates = [
   { name: "Power Tools", link: "/tricart-tools", icon: faTools },

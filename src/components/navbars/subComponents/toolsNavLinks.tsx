@@ -4,9 +4,9 @@ import { BigContentDropdown } from "../../shared/bigContentDropdown";
 import { useState } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { AllToolCategoriesDropdown } from "./allToolCategoriesDropdown";
-import powerTools from '../../../static/products.jpg'
-import brands from '../../../static/brands.jpg'
-import accessories from '../../../static/accessories.jpeg'
+import powerTools from '../../../static/cardDummyimg1.jpeg'
+import brands from '../../../static/cardDummyimg1.jpeg'
+import accessories from '../../../static/cardDummyimg1.jpeg'
 import { toolsNavlinks } from "@/data/toolsData";
 
 export const ToolsNavLinks = () => {

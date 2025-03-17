@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FC } from "react";
 import { CategoryPropType } from "@/Types/categoryPropsTypes";
-import appliances from '../../../static/appliances2.jpg'
+import appliances from '../../../static/cardDummyimg1.jpeg'
 
 interface CategoryProps {
     category: CategoryPropType;

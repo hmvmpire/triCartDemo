@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import humanSize from '../../../static/sizeGuide.jpg'
+import humanSize from '../../../static/cardDummyimg1.jpeg'
 
 export const SizeGuide = () => {
     return (

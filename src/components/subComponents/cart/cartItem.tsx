@@ -5,6 +5,7 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { FC, useEffect, useState } from "react";
+import dummyImg from '../../../static/cardDummyimg1.jpeg'
 
 interface CartItemProps {
     product: productType1 | productType2;
@@ -47,7 +48,7 @@ export const CartItem: FC<CartItemProps> = ({
             <div className="col-span-6 flex items-center gap-x-2">
                 <div className="w-20 min-w-20 h-20 relative">
                     <button title="Remove item from cart" onClick={() => deleteItem(product.label)} className="h-5 w-5 flex items-center justify-center text-xs border text-zinc-600 hover:text-red-500 rounded-full absolute -top-2 -right-2 bg-white  drop-shadow-md"><FontAwesomeIcon icon={faClose} /></button>
-                    {product.images && <Image src={product.images[0]} alt="product img" className="w-20 h-20" />}
+                    {product.images && <Image src={dummyImg} alt="product img" className="w-20 h-20" />}
                 </div>
                 <p className="text-sm fw_600 text-black ">{product.label}</p>
             </div>

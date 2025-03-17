@@ -73,7 +73,7 @@ export const TrandingOffers: FC<TrandingOffersProps> = ({
                                     </div>
                                 )}
                                 <Link href={`/tricart-tools/product${product.link}`} className="border-none outline-none shdaow-none">
-                                    <Image src={product.img} alt={"product img"} className="hover:scale-110 duration-1000 h-72 object-contain w-full" />
+                                    <Image src={product.img} alt={"product img"} className="hover:scale-110 duration-1000 h-72 object-cover w-full" />
                                 </Link>
                             </div>
                             <div className="mt-2">

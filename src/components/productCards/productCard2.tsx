@@ -31,7 +31,7 @@ export const ProductCard2: FC<ProductCard2Props> = ({
                     </div>
                 )}
                 <Link href={`/tricart-tools/product${product.link}`} className="border-none outline-none shdaow-none">
-                    <Image src={product.img} alt={"product img"} className="hover:scale-110 duration-1000 object-contain h-72" />
+                    <Image src={product.img} alt={"product img"} className="hover:scale-110 duration-1000 object-cover w-full h-72" />
                 </Link>
             </div>
             <div className="mt-2">

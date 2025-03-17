@@ -2,7 +2,7 @@ import { ProductCard2 } from "@/components/productCards/productCard2"
 import { toolsProductsData } from "@/data/toolsData"
 import { FeaturedOfferCarousel } from "./featuredOfferCarousel"
 import Image from "next/image"
-import headerImg2 from "../../../static/header2Img1.png";
+import headerImg2 from "../../../static/cardDummyimg1.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "@mui/material";

@@ -1,7 +1,7 @@
-import user1 from '../static/user1.png'
-import user2 from '../static/user2.png'
-import user3 from '../static/user3.png'
-import user4 from '../static/user4.png'
+import user1 from '../static/cardDummyimg1.jpeg'
+import user2 from '../static/cardDummyimg1.jpeg'
+import user3 from '../static/cardDummyimg1.jpeg'
+import user4 from '../static/cardDummyimg1.jpeg'
 
 
 export const testimonialsData = [

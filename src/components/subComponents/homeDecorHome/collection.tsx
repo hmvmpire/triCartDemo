@@ -1,5 +1,5 @@
 import Image from "next/image"
-import diningH3 from '../../../static/diningH3.png'
+import diningH3 from '../../../static/cardDummyimg1.jpeg'
 import { CompHeading } from "@/components/shared/compHeading"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -46,9 +46,9 @@ export const Collection = () => {
         <div className="px-3 sm:px-5 lg:px-10">
             <div className="py-14 border-b">
                 <CompHeading title="Shop By Collection" rightContent={null} justify="justify-start" headingSize="text-xl" />
-                <div className="grid grid-cols-2 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-0 md:gap-x-5 mt-8">
                     <div>
-                        <Image src={diningH3} alt="diningH3" className="w-full h-full object-contain" />
+                        <Image src={diningH3} alt="diningH3" className="w-full h-full object-cover" />
                     </div>
                     <div className="bg-zinc-100  pt-4 pb-14 md:py-8 relative z-40">
                         <Carousel

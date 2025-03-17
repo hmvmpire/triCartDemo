@@ -4,8 +4,6 @@ import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "@mui/material";
 import { useState } from "react";
-import logo from "../../static/fashionLogo.png"
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons/faBagShopping";
 import { FashionNavLinks } from "./subComponents/fashionNavLinks";
@@ -39,7 +37,7 @@ export const FashionNavbar = () => {
                     <button className="text-2xl block lg:hidden" onClick={() => setShow(true)}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
-                    <Image src={logo} alt="logo" className="w-20 md:w-32 cursor-pointer" onClick={() => router.push("/tricart-fashion")} />
+                    <button onClick={() => router.push("/tricart-fashion")} className={`text-2xl fw_600 text-fashionPrimary-HOVER`}>LOGO</button>
                 </div>
                 <div className="flex items-center gap-x-4">
                     <div className={`hidden lg:block w-80`}>

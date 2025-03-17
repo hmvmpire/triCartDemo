@@ -1,12 +1,12 @@
-import blog1 from '../static/blog1.jpg'
-import blog2 from '../static/blog2.jpg'
-import blog3 from '../static/blog3.jpg'
-import blog4 from '../static/blog4.jpg'
+import blog1 from '../static/cardDummyimg1.jpeg'
+import blog2 from '../static/cardDummyimg1.jpeg'
+import blog3 from '../static/cardDummyimg1.jpeg'
+import blog4 from '../static/cardDummyimg1.jpeg'
 
 
-import blog5 from '../static/accessories.jpeg'
-import blog6 from '../static/batteries.jpeg'
-import blog7 from '../static/toolBox.jpeg'
+import blog5 from '../static/cardDummyimg1.jpeg'
+import blog6 from '../static/cardDummyimg1.jpeg'
+import blog7 from '../static/cardDummyimg1.jpeg'
 import { stringToSlug } from '@/services/generalService'
 
 export const electronicsBlogsData = [

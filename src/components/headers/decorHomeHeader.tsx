@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import h3Img1 from '../../static/home3ban1.png'
-import h3Img2 from '../../static/home3ban4.jpg'
-import h3Img3 from '../../static/home3ban5.jpg'
-import h3Img4 from '../../static/home3ban2.png'
+import h3Img1 from '../../static/cardDummyimg1.jpeg'
+import h3Img2 from '../../static/cardDummyimg1.jpeg'
+import h3Img3 from '../../static/cardDummyimg1.jpeg'
+import h3Img4 from '../../static/cardDummyimg1.jpeg'
 
 interface BannerItem {
     image: any;
@@ -25,7 +25,7 @@ const BannerImage = ({ image, title, subtitle, className, imageClassName }: Bann
         <Image 
             src={image} 
             alt={title} 
-            className={`object-cover h-full w-full rounded-sm transition-transform duration-300 group-hover:scale-110 ${imageClassName}`} 
+            className={`object-cover w-full rounded-sm transition-transform duration-300 group-hover:scale-110 ${imageClassName}`} 
         />
         <BannerOverlay title={title} subtitle={subtitle} />
     </div>
@@ -43,11 +43,11 @@ export const DecorHomeHeader = () => {
         <div className="px-4 sm:px-5 lg:px-10 pt-1">
             <div className="grid grid-cols-12 gap-3 sm:gap-5 md:gap-3 lg:gap-5 pb-14 border-b">
                 {bannerItems.slice(0, 2).map((item, index) => (
-                    <BannerImage key={index} {...item} />
+                    <BannerImage key={index} {...item} imageClassName='h-[800px]' />
                 ))}
                 <div className="col-span-12 md:col-span-6 flex flex-col gap-y-3 sm:gap-y-5 md:gap-y-3 lg:gap-y-5">
                     {bannerItems.slice(2).map((item, index) => (
-                        <BannerImage key={index + 2} {...item} />
+                        <BannerImage key={index + 2} {...item} imageClassName='h-[390px]' />
                     ))}
                 </div>
             </div>

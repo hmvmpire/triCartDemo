@@ -1,4 +1,4 @@
-import bannerbg1 from '../../../static/toolBanner.jpeg'
+import bannerbg1 from '../../../static/cardDummyimg1.jpeg'
 export const Banner = () => {
     return (
         <div className='container1'>

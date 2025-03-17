@@ -61,7 +61,7 @@ export const FeaturedOfferCarousel = () => {
                                     {product.tag}
                                 </div>
                             )}
-                            <Image src={product.img} alt={"product img"} className="hover:scale-110 duration-1000 h-72 object-contain w-full" />
+                            <Image src={product.img} alt={"product img"} className="hover:scale-110 duration-1000 h-72 object-cover w-full" />
                         </div>
                         <div className="mt-2">
                             <p className="text-xxs text-zinc-400 fw_400">{product.categories}</p>

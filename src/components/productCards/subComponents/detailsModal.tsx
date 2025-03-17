@@ -7,7 +7,7 @@ import { faBagShopping } from "@fortawesome/free-solid-svg-icons/faBagShopping";
 import { faClose } from "@fortawesome/free-solid-svg-icons/faClose";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMediaQuery } from "@mui/material";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FC, useState } from "react";
 
 interface DetailsModalProps {
@@ -51,7 +51,7 @@ export const DetailsModal: FC<DetailsModalProps> = ({
             } h-full`}
         >
           <div className={`flex flex-col gap-y-3 ${matches2 ? "" : "sticky top-6 h-max"}`}>
-            <div className="relative">
+            <div className="relative border rounded-md">
               {product.tag && (
                 <div className="rounded-full h-5 uppercase fw_400 flex items-center justify-center px-3 bg-ELECTRONICS_PRIMARY-HOVER text-white z-30 text-xxs absolute top-2 left-2">
                   {product.tag}
@@ -60,7 +60,7 @@ export const DetailsModal: FC<DetailsModalProps> = ({
               <Image
                 src={product.images[selectedImage]}
                 alt="selectedImage"
-                className={`w-full ${matches2 ? "h-72 sm:h-96" : "h-80 lg:h-96"} object-contain rounded-lg`}
+                className={`w-full h-96 object-cover`}
               />
             </div>
             <div className="flex items-center gap-x-2 overflow-x-auto">
@@ -77,7 +77,7 @@ export const DetailsModal: FC<DetailsModalProps> = ({
                     <Image
                       src={data}
                       alt="thumbnail"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 ))}

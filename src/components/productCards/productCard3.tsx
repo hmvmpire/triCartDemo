@@ -58,7 +58,7 @@ export const ProductCard3: FC<ProductCard3Props> = ({
                 </div>
                 <DetailsModal show={show} setShow={setShow} product={product} />
                 <Link href={`/tricart-home-decore/product${product.link}`} className="border-none outline-none shdaow-none">
-                    <Image src={product.img} alt={"product img"} className={`hover:scale-110 duration-1000 ${size === "lg" ? "h-full" : "h-72 sm:h-80"} object-contain w-full`} />
+                    <Image src={product.img} alt={"product img"} className={`hover:scale-110 duration-1000 ${size === "lg" ? "h-full" : "h-72 sm:h-80"} object-cover w-full`} />
                 </Link>
             </div>
             <div className="mt-2">

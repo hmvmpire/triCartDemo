@@ -1,7 +1,7 @@
 import Image from "next/image"
-import simpBg1 from '../../../static/header2Img1.png'
-import simpBg2 from '../../../static/cordlessScrewdriver.png'
-import simpBg3 from '../../../static/wrench.png'
+import simpBg1 from '../../../static/cardDummyimg1.jpeg'
+import simpBg2 from '../../../static/cardDummyimg1.jpeg'
+import simpBg3 from '../../../static/cardDummyimg1.jpeg'
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useMediaQuery } from "@mui/material"

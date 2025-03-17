@@ -103,7 +103,7 @@ export const ImagesCarousel2: React.FC<ImageCarousel2Props> = ({
     >
         {imagesData.map((img, index) => (
             <div className="p-2 sm:p-5">
-                <Image src={img} alt="img" key={index + 1} style={{ height: detailPage2 ? "400px" : "600px" }} className="w-full object-contain rounded-lg" />
+                <Image src={img} alt="img" key={index + 1} style={{ height: detailPage2 ? "400px" : "600px" }} className="w-full object-cover rounded-lg" />
             </div>
         ))}
     </Carousel>
@@ -111,8 +111,8 @@ export const ImagesCarousel2: React.FC<ImageCarousel2Props> = ({
     const content2 = <div className="flex flex-col overflow-y-auto gap-y-2">
         {imagesData.map((img, index) => (
             <div className="cursor-pointer" key={index + 1}>
-                <div className={`${bgColor ? bgColor : "bg-white"} rounded-md p-5 border-2 border-black ${myIndex === index ? "border-opacity-100" : "border-opacity-0"}`}>
-                    <Image src={img} alt="img" onClick={() => handleThumbnailClick(index)} className={`w-full h-20 object-contain`} />
+                <div className={`${bgColor ? bgColor : "bg-white"} rounded-md p-2 border-2 border-black ${myIndex === index ? "border-opacity-100" : "border-opacity-0"}`}>
+                    <Image src={img} alt="img" onClick={() => handleThumbnailClick(index)} className={`w-full h-20 object-cover`} />
                 </div>
             </div>
         ))}
@@ -153,7 +153,7 @@ export const ImagesCarousel2: React.FC<ImageCarousel2Props> = ({
             <div className={`${matches2 ? "hidden" : "block"} ${matches ? "col-span-3" : "col-span-2"}`}>
                 {content2}
             </div>
-            <div className={`${bgColor ? bgColor : "bg-white"} ${matches ? "col-span-9" : "col-span-10"} ${matches2 ? "" : ""} rounded-md`}>
+            <div className={`${bgColor ? bgColor : "bg-white"} ${matches ? "col-span-9" : "col-span-10"} ${matches2 ? "" : ""} rounded-md flex items-center justify-center`}>
                 {content(galleryresponsive)}
             </div>
             <div className={matches2 ? "block" : "hidden"}>
