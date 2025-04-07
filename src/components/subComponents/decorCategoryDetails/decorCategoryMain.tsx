@@ -31,7 +31,7 @@ export const DecorCategoryMain: FC<DecorCategoryMainProps> = ({
 
     return (category &&
         <div className="px-3 sm:px-5 lg:px-10">
-            <button onClick={() => setShow(true)} className="fixed top-32 left-0 z-40 flex lg:hidden items-center gap-x-2 bg-zinc-100 text-sm fw_400 text-blue-700 drop-shadow-md rounded-sm py-3 px-3 justify-center">
+            <button onClick={() => setShow(true)} className="fixed top-40 left-0 z-40 flex lg:hidden items-center gap-x-2 bg-zinc-100 text-sm fw_400 text-blue-700 drop-shadow-md rounded-sm py-3 px-3 justify-center">
                 <FontAwesomeIcon icon={faSliders} /> </button>
             <SideFilterBox2 size={size} setSize={setSize} show={show} setShow={setShow} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} price={price} setPrice={setPrice} colors={colors} setColors={setColors} brands={brands} setBrands={setBrands} />
             <div className="flex gap-x-5 pb-10">

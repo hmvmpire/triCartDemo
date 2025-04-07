@@ -13,12 +13,10 @@ interface DecorSideNavProps {
   setShow: (show: boolean) => void;
   dataList: linkType[]
   showSearchBox?: boolean
-  productBaseUrl: string
   categoryBaseUrl: string
-  nav4?: boolean
 }
 
-export const DecorSideNav: FC<DecorSideNavProps> = ({ show, setShow, dataList, showSearchBox, productBaseUrl, categoryBaseUrl, nav4 }): JSX.Element => {
+export const DecorSideNav: FC<DecorSideNavProps> = ({ show, setShow, dataList, showSearchBox, categoryBaseUrl }): JSX.Element => {
   return (
     <div
       className={`bg-white fixed top-0 bottom-0 w-72 z-50 duration-300 shadow-md pb-4 pt-10 overflow-y-auto ${show ? "left-0" : "-left-full"
@@ -34,7 +32,7 @@ export const DecorSideNav: FC<DecorSideNavProps> = ({ show, setShow, dataList, s
         {show && dataList.map((navLink: linkType, index: number) =>
           navLink.subLinks && navLink.subLinks.length > 0 ? (
             <div key={index + 1}>
-              <LinksTreeView productBaseUrl={nav4 ? navLink.label === "Categories" ? "/tricart-fashion/category" : "" : productBaseUrl} navLink={navLink as linkType} />
+              <LinksTreeView productBaseUrl={""} navLink={navLink as linkType} />
             </div>
           ) : (
             <div

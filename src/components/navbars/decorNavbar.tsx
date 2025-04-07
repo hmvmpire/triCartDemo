@@ -150,7 +150,6 @@ export const DecorNavbar: React.FC = () => {
                 </div>
             </div>
             <DecorSideNav
-                productBaseUrl="/tricart-home-decore/product"
                 categoryBaseUrl=""
                 show={isSideNavOpen}
                 setShow={setIsSideNavOpen}
