@@ -12,10 +12,10 @@ import {
 import { faBell } from '@fortawesome/free-regular-svg-icons'
 
 export const homePages = [
-  { name: "Home Page 1", image: home1, slug: "/tricart-electronics" },
-  { name: "Home Page 2", image: home2, slug: "/tricart-tools" },
-  { name: "Home Page 3", image: home3, slug: "/tricart-home-decore" },
-  { name: "Home Page 4", image: home4, slug: "/tricart-fashion" },
+  { name: "Tricart Tools", image: home1, slug: "/tricart-tools" },
+  { name: "Tricart Decor", image: home2, slug: "/tricart-home-decore" },
+  { name: "Tricart Fashion", image: home3, slug: "/tricart-fashion" },
+  { name: "Tricart Electronics", image: home4, slug: "/tricart-electronics" },
 ]
 
 
@@ -31,18 +31,12 @@ export const otherPages = [
   { icon: faUserCog, title: "Account Dashboard", slug: "/account/my-account" },
 ];
 
-export const pagesLength = [
-  { name: "Home Pages", length: "4" },
-  { name: "Listing Pages", length: "4" },
-  { name: "Detail Pages", length: "4" },
-  { name: "Other Pages", length: "8+" },
-]
 
 export const templates = [
-  { name: "Power Tools", link: "/tricart-tools", icon: faTools },
-  { name: "Home Decor", link: "/tricart-home-decore", icon: faChair },
-  { name: "Fashion", link: "/tricart-fashion", icon: faShirt },
-  { name: "Electronics", link: "/tricart-electronics", icon: faMobileAlt },
+  { name: "Tricart Tools", link: "/tricart-tools", icon: faTools },
+  { name: "Tricart Decor", link: "/tricart-home-decore", icon: faChair },
+  { name: "Tricart Fashion", link: "/tricart-fashion", icon: faShirt },
+  { name: "Tricart Electronics", link: "/tricart-electronics", icon: faMobileAlt },
 ]
 
 export const techs = [
