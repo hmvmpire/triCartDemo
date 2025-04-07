@@ -9,10 +9,6 @@ import { toast } from "react-toastify"
 const AuthenticationMain = () => {
     const [finalData, setFinalData] = useState<UserType>({ name: "", email: "", password: "" })
     const [finalDataLogin, setFinalDataLogin] = useState<UserType>({ name: "", email: "", password: "" })
-    const breadcrumbData = [
-        { name: <FontAwesomeIcon icon={faHome} />, link: "/" },
-        { name: "Authentication", link: "/" },
-    ]
     const router = useRouter()
 
     const handleUpdate = (key: string, val: string) => {
@@ -53,6 +49,10 @@ const AuthenticationMain = () => {
         toast.success("Login successfully!")
         router.push(templateBasePath + "/account/my-account")
     }
+    const breadcrumbData = [
+        { name: <FontAwesomeIcon icon={faHome} />, link: templateBasePath },
+        { name: "Authentication", link: "/" },
+    ]
     return (
         <div className="h-screen max-h-screen flex flex-col">
             <div className="h-40 min-h-40 sm:h-52 sm:min-h-52 w-full bg-gradient-to-r from-indigo-700 via-purple-700 to-purple-700">

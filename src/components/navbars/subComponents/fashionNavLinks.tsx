@@ -30,13 +30,13 @@ export const FashionNavLinks = () => {
                     onMouseLeave={() => setShow("")}
                     className={`relative`}
                 >
-                    {navlink.label === "Blog" ?
+                    {(navlink.label === "Blog" && window.location.pathname === "/tricart-fashion")?
                         <a href="#blog4" onClick={handleSmoothScroll} className={`${navlink.label === show ? "bg-white text-black" : "text-white"
                             } duration-300 fw_600 flex items-center gap-x-2 text-xs uppercase border-none outline-none shadow-none py-3 px-4`}>
                             {navlink.label}
                         </a>
                         : <Link
-                            href={navlink.link}
+                            href={navlink.label === "Blog"? "/tricart-fashion" : navlink.link}
                             className={`${navlink.label === show ? "bg-white text-black" : "text-white"
                                 } duration-300 fw_600 flex items-center gap-x-2 text-xs uppercase border-none outline-none shadow-none py-3 px-4`}
                         >
