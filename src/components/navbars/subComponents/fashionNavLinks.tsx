@@ -11,13 +11,13 @@ export const FashionNavLinks = () => {
     const [show, setShow] = useState("");
     const column4Content = (img: StaticImageData) =>
         <div style={{ backgroundImage: `url(${img.src})` }} className="border-2 border-white relative bg-center bg-cover px-3 py-5 flex flex-col items-center justify-between gap-x-4 min-h-72 h-full w-full">
-           <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center">
-           <button
-                className={`bg-white text-fashionPrimary text-sm w-32 h-10 fw_400 duration-300 hover:bg-fashionPrimary hover:text-white`}
-            >
-                View Sale
-            </button>
-           </div>
+            <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center">
+                <button
+                    className={`bg-white text-fashionPrimary text-sm w-32 h-10 fw_400 duration-300 hover:bg-fashionPrimary hover:text-white`}
+                >
+                    View Sale
+                </button>
+            </div>
         </div>
 
 
@@ -30,13 +30,13 @@ export const FashionNavLinks = () => {
                     onMouseLeave={() => setShow("")}
                     className={`relative`}
                 >
-                    {navlink.label === "Blog" ?
+                    {(navlink.label === "Blog" && window.location.pathname === "/tricart-fashion") ?
                         <a href="#blog4" onClick={handleSmoothScroll} className={`${navlink.label === show ? "bg-white text-black" : "text-white"
                             } duration-300 fw_600 flex items-center gap-x-2 text-xs uppercase border-none outline-none shadow-none py-3 px-4`}>
                             {navlink.label}
                         </a>
                         : <Link
-                            href={navlink.link}
+                            href={navlink.label === "Blog" ? "/tricart-fashion" : navlink.link}
                             className={`${navlink.label === show ? "bg-white text-black" : "text-white"
                                 } duration-300 fw_600 flex items-center gap-x-2 text-xs uppercase border-none outline-none shadow-none py-3 px-4`}
                         >
