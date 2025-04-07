@@ -1,6 +1,6 @@
 import { Layout } from "@/components/subComponents/account/layout"
 import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons"
-import { faArrowRightFromBracket, faBoxOpen, faDashboard, faDownload, faLocationDot, faTableCells } from "@fortawesome/free-solid-svg-icons"
+import { faArrowRightFromBracket, faBoxOpen, faLocationDot, faTableCells } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
 import { useRouter } from "next/router"
