@@ -22,7 +22,7 @@ export const Sidebar = () => {
     const nav4Route = typeof window !== "undefined" &&
         window.location.pathname.includes("/tricart-fashion")
 
-    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : ""
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
 
     return (useMemo(() => {
         return <div className="w-full md:w-60 md:min-w-60 lg:w-80 lg:min-w-80 bg-white p-5 rounded-md md:h-[600px] md:sticky top-5">

@@ -9,17 +9,18 @@ import { MainLayout } from "@/components/shared/MainLayout";
 interface LayoutProps {
     children: JSX.Element;
     title: string
+    baseUrl: string
 }
 
 export const Layout: FC<LayoutProps> = ({
-    children, title
+    children, title,baseUrl
 }): JSX.Element => {
     const breadcrumbData = [
         { name: <FontAwesomeIcon icon={faHome} />, link: "/" },
         { name: "Account", link: "/" },
     ]
     return (
-        <AuthGuard>
+        <AuthGuard baseUrl={baseUrl}>
             <MainLayout>
                 <div className="bg-zinc-100">
                     <div className="h-60 sm:h-72 md:h-80 w-full relative bg-zinc-200">

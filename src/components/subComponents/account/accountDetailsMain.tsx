@@ -25,9 +25,22 @@ const AccountDetailsMain = () => {
         setFinalData(finalData as ProfileType)
         toast.success("User data updated successfully!")
     }
+
+    const nav1Route =
+        typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-electronics")
+    const nav2Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-tools")
+    const nav3Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-home-decore")
+    const nav4Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-fashion")
+
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
+
     return (
         <div>
-            <Layout title={"Account Dashboard"}>
+            <Layout title={"Account Dashboard"} baseUrl={templateBasePath}>
                 <div className="">
                     <div className="flex items-center gap-x-4">
                         <FontAwesomeIcon icon={faUser} className="text-4xl text-zinc-700" />

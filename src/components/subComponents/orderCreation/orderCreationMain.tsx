@@ -15,7 +15,7 @@ export const OrderCreationMain: React.FC = () => {
     const nav3Route = window.location.pathname.includes("/tricart-home-decore")
     const nav4Route = window.location.pathname.includes("/tricart-fashion")
 
-    const successPath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : ""
+    const successPath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
 
     return (
         <div className="bg-zinc-100">

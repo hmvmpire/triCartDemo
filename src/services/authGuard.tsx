@@ -4,9 +4,10 @@ import { useRouter } from 'next/router';
 
 interface AuthGuardProps {
   children: JSX.Element;
+  baseUrl: string
 }
 
-export const AuthGuard = ({ children }: AuthGuardProps) => {
+export const AuthGuard = ({ children, baseUrl }: AuthGuardProps) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -15,7 +16,7 @@ export const AuthGuard = ({ children }: AuthGuardProps) => {
 
     // If no user is found, redirect to the login page
     if (!user) {
-      router.push('/account/authentication');
+      router.push(baseUrl + '/account/authentication');
     }
   }, [router]);
 
