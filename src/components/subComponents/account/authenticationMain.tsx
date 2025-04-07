@@ -26,12 +26,24 @@ const AuthenticationMain = () => {
         setFinalDataLogin(updated)
     }
 
+    const nav1Route =
+        typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-electronics")
+    const nav2Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-tools")
+    const nav3Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-home-decore")
+    const nav4Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-fashion")
+
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
+
     const onRegister = (e: any) => {
         e.preventDefault();
         localStorage.setItem("user", JSON.stringify(finalData))
         setFinalData({ name: "", email: "", password: "" })
         toast.success("Registered successfully!")
-        router.push("/account/my-account")
+        router.push(templateBasePath + "/account/my-account")
     }
 
     const onLogin = (e: any) => {
@@ -39,7 +51,7 @@ const AuthenticationMain = () => {
         localStorage.setItem("user", JSON.stringify(finalData))
         setFinalDataLogin({ name: "", email: "", password: "" })
         toast.success("Login successfully!")
-        router.push("/account/my-account")
+        router.push(templateBasePath + "/account/my-account")
     }
     return (
         <div className="h-screen max-h-screen flex flex-col">
