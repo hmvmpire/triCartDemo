@@ -19,7 +19,7 @@ export const ToolsNavbar = () => {
     const router = useRouter()
     return (
         <div
-            className={`container1 flex flex-col justify-center md:justify-center ${matches3 ? "h-20 gap-y-5" : "h-44 gap-y-5 sticky -top-20 z-50"
+            className={`container1 flex flex-col justify-center ${matches3 ? "h-20 gap-y-5" : "h-44 gap-y-5 sticky -top-20 z-50"
                 }`}
         >
             <div
