@@ -34,7 +34,7 @@ export const ToolsProductHeader: FC<ToolsProductHeaderProps> = ({
     const matches = useMediaQuery("(max-width:1130px)");
 
     return (product &&
-        <div className="py-5 mt-0">
+        <div className="pb-5 mt-0">
             <div className="container1">
                 <Breadcrumb hoverColor="hover:text-TOOLS_PRIMARY-HOVER" linkColor="text-TOOLS_PRIMARY" breadcrumbData={breadcrumbData} />
                 <div className="grid grid-cols-12 mt-5 gap-y-8 md:gap-y-0 md:gap-x-5 md:relative">

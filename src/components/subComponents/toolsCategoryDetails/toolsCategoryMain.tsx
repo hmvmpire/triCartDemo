@@ -37,7 +37,7 @@ export const ToolsCategoryMain: FC<ToolsCategoryMainProps> = ({
 
     return (category &&
         <div className="container1">
-            <div className="relative w-full bg-center bg-cover bg-no-repeat my-4 rounded-lg" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${category.img?.src || ''})` }}>
+            <div className="relative w-full bg-center bg-cover bg-no-repeat mb-4 rounded-lg" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${category.img?.src || ''})` }}>
                 <div className="absolute top-5 left-5 z-20">
                     <Breadcrumb hoverColor="hover:text-TOOLS_PRIMARY-HOVER" linkColor="text-TOOLS_PRIMARY" breadcrumbData={breadcrumbData} />
                 </div>
