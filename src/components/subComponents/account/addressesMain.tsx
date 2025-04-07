@@ -10,9 +10,21 @@ const AddressesMain = () => {
     const [billingAddress, setBillingAddress] = useState<AddressType | null>(defaultAddress)
     const [shippingAddress, setShippingAddress] = useState<AddressType | null>(defaultAddress)
     const [show, setShow] = useState("")
+    const nav1Route =
+        typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-electronics")
+    const nav2Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-tools")
+    const nav3Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-home-decore")
+    const nav4Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-fashion")
+
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
+
     return (
         <div>
-            <Layout title={"Account Dashboard"}>
+            <Layout title={"Account Dashboard"} baseUrl={templateBasePath}>
                 {show === "billingForm" || show === "shippingForm" ?
                     <BillingForm show={show} setShow={setShow} address={show === "billingForm" ? billingAddress as AddressType : shippingAddress as AddressType} setAddress={show === "billingForm" ? setBillingAddress : setShippingAddress} backArrow={true} />
                     : <div className="">
@@ -34,7 +46,7 @@ const AddressesMain = () => {
                             <div>
                                 <h3 className="fw_600 text-lg text-black">Shipping Address</h3>
                                 <div className="mt-4 flex flex-col gap-y-1">
-                                <p className="text-zinc-400 fw_400 text-sm">{shippingAddress?.firstName} {shippingAddress?.lastName}</p>
+                                    <p className="text-zinc-400 fw_400 text-sm">{shippingAddress?.firstName} {shippingAddress?.lastName}</p>
                                     <p className="text-zinc-400 fw_400 text-sm">{shippingAddress?.streetAddress1}</p>
                                     <p className="text-zinc-400 fw_400 text-sm">{shippingAddress?.city}, OR {shippingAddress?.zip}</p>
                                 </div>

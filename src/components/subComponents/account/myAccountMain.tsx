@@ -17,16 +17,16 @@ const MyAccountMain = () => {
     const nav4Route = typeof window !== "undefined" &&
         window.location.pathname.includes("/tricart-fashion")
 
-    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : ""
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
     const router = useRouter()
     const Logout = () => {
         localStorage.removeItem("user")
         toast.success("Logout successfully!")
-        router.push("/")
+        router.push(templateBasePath)
     }
     return (
         <div>
-            <Layout title={"Account Dashboard"}>
+            <Layout title={"Account Dashboard"} baseUrl={templateBasePath}>
                 <div className="">
                     <p className="text-sm fw_400 text-zinc-500">
                         Hello <span className="fw_600 text-black">danial waris</span>

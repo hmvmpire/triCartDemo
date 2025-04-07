@@ -33,13 +33,13 @@ window.location.pathname.includes("/tricart-home-decore")
 const nav4Route = typeof window !== "undefined" &&
 window.location.pathname.includes("/tricart-fashion")
 
-const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : ""
+const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
 
 
 export const OrdersMain = () => {
     return (
         <div>
-            <Layout title={"Account Dashboard"}>
+            <Layout title={"Account Dashboard"} baseUrl={templateBasePath}>
                 <div className="w-full">
                     <div className="flex items-center gap-x-4">
                         <FontAwesomeIcon icon={faBoxOpen} className="text-4xl text-zinc-700" />

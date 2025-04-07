@@ -6,11 +6,7 @@ import { toast } from "react-toastify"
 
 export const Sidebar = () => {
     const router = useRouter()
-    const Logout = () => {
-        localStorage.removeItem("user")
-        toast.success("Logout successfully!")
-        router.push("/")
-    }
+
 
     const nav1Route =
         typeof window !== "undefined" &&
@@ -22,8 +18,12 @@ export const Sidebar = () => {
     const nav4Route = typeof window !== "undefined" &&
         window.location.pathname.includes("/tricart-fashion")
 
-    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : ""
-
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
+    const Logout = () => {
+        localStorage.removeItem("user")
+        toast.success("Logout successfully!")
+        router.push(templateBasePath)
+    }
     return (useMemo(() => {
         return <div className="w-full md:w-60 md:min-w-60 lg:w-80 lg:min-w-80 bg-white p-5 rounded-md md:h-[600px] md:sticky top-5">
             <h2 className="uppercase text-base fw_700 text-black">My Account</h2>

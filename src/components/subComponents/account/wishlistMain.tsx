@@ -34,13 +34,14 @@ const WishlistMain = () => {
             setWishlistItems(fashionProductsData)
         }
     }, [])
+const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
     
     const handleDelete = (label: string) => {
         setWishlistItems(wishlistItems.filter((item) => item.label !== label))
     }
     return (
         <div>
-            <Layout title={"Account Dashboard"}>
+            <Layout title={"Account Dashboard"} baseUrl={templateBasePath}>
                 <div className="">
                     <div className="flex items-center gap-x-4">
                         <FontAwesomeIcon icon={faHeart} className="text-4xl text-zinc-700" />

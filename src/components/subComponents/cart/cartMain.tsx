@@ -37,7 +37,7 @@ const nav3Route = typeof window !== "undefined" &&
 const nav4Route = typeof window !== "undefined" &&
     window.location.pathname.includes("/tricart-fashion")
 
-const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : ""
+const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
 
 
     return (
