@@ -4,8 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
 const TermsAndConditionsMain = () => {
+    const nav1Route =
+        typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-electronics")
+    const nav2Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-tools")
+    const nav3Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-home-decore")
+    const nav4Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-fashion")
+
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
+
     const breadcrumbData = [
-        { name: <FontAwesomeIcon icon={faHome} />, link: "/" },
+        { name: <FontAwesomeIcon icon={faHome} />, link: templateBasePath },
         { name: "Terms & Conditions", link: "/" },
     ]
     return (
