@@ -26,7 +26,7 @@ export const DecorProductHeader: FC<DecorProductHeaderProps> = ({
     const [color, setColor] = useState("")
     const [quantity, setQuantity] = useState(1)
     const breadcrumbData = [
-        { name: <FontAwesomeIcon icon={faHome} />, link: "/" },
+        { name: <FontAwesomeIcon icon={faHome} />, link: "/tricart-home-decore" },
         { name: category && category.label, link: category && category.link },
         { name: product && product.label && product.label, link: "/" },
     ]
