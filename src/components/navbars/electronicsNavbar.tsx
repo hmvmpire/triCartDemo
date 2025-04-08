@@ -37,7 +37,7 @@ export const ElectronicsNavbar = () => {
               <FontAwesomeIcon icon={faBars} className="text-lg text-ELECTRONICS_PRIMARY-HOVER" />
             </button>
           )}
-          <Image src={logo} alt="logo" className="w32 sm:w-44 cursor-pointer" onClick={() => router.push("/tricart-electronics")} />
+          <Image src={logo} alt="logo" className="w-32 sm:w-44 cursor-pointer" onClick={() => router.push("/tricart-electronics")} />
         </div>
         <div
           className={`flex items-center ${matches3 ? "justify-end w-max" : "gap-x-10 w-full"

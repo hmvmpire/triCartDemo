@@ -18,6 +18,20 @@ const CartItemsList = () => {
         updateCart(item)
         getCartItems()
     }
+
+    const nav1Route =
+        typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-electronics")
+    const nav2Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-tools")
+    const nav3Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-home-decore")
+    const nav4Route = typeof window !== "undefined" &&
+        window.location.pathname.includes("/tricart-fashion")
+
+    const templateBasePath = nav1Route ? "/tricart-electronics" : nav2Route ? "/tricart-tools" : nav3Route ? "/tricart-home-decore" : nav4Route ? "/tricart-fashion" : "/"
+
+
     return (
         <div className="flex flex-col gap-y-10 w-full overflow-x-hidden">
             <div className="flex items-center justify-between">
@@ -40,7 +54,7 @@ const CartItemsList = () => {
                     )) :
                         <div className=" flex flex-col gap-y-4 items-center justify-center h-60">
                             <p className="text-base text-black fw_400 text-center">Your cart is empty!</p>
-                            <Link href={"/"} className="outline-none border-none shadow-none flex items-center justify-center bg-gradient-to-r from-indigo-700 via-purple-700 to-purple-700 hover:w-60 rounded-full text-white text-sm uppercase h-12 w-52 fw_600 duration-300">Start Shoping</Link>
+                            <Link href={templateBasePath} className="outline-none border-none shadow-none bg-zinc-800 hover:bg-black flex items-center justify-center text-white text-sm uppercase h-12 w-52 fw_600 duration-300">Start Shoping</Link>
                         </div>
                     }
                 </div>
