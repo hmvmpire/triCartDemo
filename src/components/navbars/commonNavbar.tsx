@@ -10,43 +10,34 @@ import Link from "next/link";
 import { commonNavbarLinks } from "@/data/MainPageData";
 
 interface CommonNavbarProps {
-    otherRoute?: boolean;
     container?: boolean
 }
 
 
 export const CommonNavbar: FC<CommonNavbarProps> = ({
-    otherRoute, container
+    container
 }): JSX.Element => {
     const router = useRouter();
     const [isSidebarOpen, setIsSidebarOpen] = useState(false); // For sidebar toggle
-    const [scroll, setScroll] = useState(false);
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-    const handleScroll = () => {
-        if (window.scrollY > 0) {
-            setScroll(true);
-        } else {
-            setScroll(false);
-        }
-    }
-    window.addEventListener("scroll", handleScroll);
+
 
     const loc = window.location.pathname;
     return (
         <>
-            <div className={`sticky z-30 top-0 h-20 left-0 ${otherRoute ? `bg-white shadow-sm` : scroll ? "text-black bg-white shadow-sm" : "shadow-md text-white bg-gradient-to-r from-indigo-700 via-purple-700 to-purple-700"}`}>
+            <div className={`sticky z-30 top-0 h-20 left-0 text-black bg-white shadow-sm`}>
                 <div className={`${container ? "container1" : "container3"} h-20 flex items-center justify-between gap-x-4`}>
                     <Image
-                        src={(scroll || otherRoute) ? logo2 : logo}
+                        src={logo2}
                         alt="logo"
                         className="w-24 sm:w-28 md:w-32 cursor-pointer hover:opacity-80 transition-opacity duration-300"
                         onClick={() => router.push("/")}
                     />
                     {!isSidebarOpen && <button
                         onClick={toggleSidebar}
-                        className={`lg:hidden ${(scroll || otherRoute) ? "text-black" : "text-white"} hover:scale-95 transition-colors`}
+                        className={`lg:hidden text-black hover:scale-95 transition-colors`}
                     >
                         <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} className="text-xl" />
                     </button>}
@@ -59,12 +50,12 @@ export const CommonNavbar: FC<CommonNavbarProps> = ({
                             >
                                 {loc === "/" ? <a href={navlink.path}
                                     onClick={handleSmoothScroll}
-                                    className={`border-none outline-none shadow-none cursor-pointer duration-300 w-max ${(scroll || otherRoute) ? "text-zinc-700 hover:text-black" : "text-zinc-300 hover:text-white"} fw_400 px-4 py-1 text-base flex items-center gap-x-2 py-2`}
+                                    className={`border-none outline-none shadow-none cursor-pointer duration-300 w-max text-zinc-700 hover:text-black fw_400 px-4 py-1 text-base flex items-center gap-x-2 py-2`}
                                 >
                                     {navlink.label}
                                 </a> :
                                     <Link href={"/" + navlink.path}
-                                        className={`border-none outline-none shadow-none cursor-pointer duration-300 w-max ${(scroll || otherRoute) ? "text-zinc-700 hover:text-black" : "text-zinc-300 hover:text-white"} fw_400 px-4 py-1 text-base flex items-center gap-x-2 py-2`}
+                                        className={`border-none outline-none shadow-none cursor-pointer duration-300 w-max text-zinc-700 hover:text-black fw_400 px-4 py-1 text-base flex items-center gap-x-2 py-2`}
                                     >
                                         {navlink.label}
                                     </Link>

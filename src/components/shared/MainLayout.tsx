@@ -24,7 +24,7 @@ export const MainLayout: FC<MainLayoutProps> = ({
     const nav3Route = window.location.pathname.includes("/tricart-home-decore")
     const nav4Route = window.location.pathname.includes("/tricart-fashion")
 
-    const navbar = nav1Route ? <ElectronicsNavbar /> : nav2Route ? <ToolsNavbar /> : nav3Route ? <DecorNavbar /> : nav4Route ? <FashionNavbar /> : <CommonNavbar container={true} otherRoute={!isHome} />
+    const navbar = nav1Route ? <ElectronicsNavbar /> : nav2Route ? <ToolsNavbar /> : nav3Route ? <DecorNavbar /> : nav4Route ? <FashionNavbar /> : <CommonNavbar container={true} />
     const footer = nav1Route ? <ElectronicsFooter /> : nav2Route ? <ToolsFooter /> : nav3Route ? <DecorFooter /> : nav4Route ? <FashionFooter /> : <CommonFooter />
     return (
         <Fragment>
