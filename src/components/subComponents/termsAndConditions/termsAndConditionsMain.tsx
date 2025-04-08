@@ -1,7 +1,6 @@
 import { Breadcrumb } from "@/components/shared/breadcrumb"
 import { faHome } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { MainLayout } from "@/components/shared/MainLayout";
 
 
 const TermsAndConditionsMain = () => {
